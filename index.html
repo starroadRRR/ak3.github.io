@@ -4,12 +4,369 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-    <p style="text-align: center;">
-    <img src="https://i.ibb.co/RTDmtdW/dd1.jpg" alt="dd1" />
-    <script>
+    <body style="background: linear-gradient(to top, rgb(255, 255, 255), rgb(255, 255, 255));">　　	
+		<style>
+
+		img.copy {
+			border: 0;
+			display:block;
+		}
+
+		*{
+			padding: 0;
+			margin: 0;			
+		}
+		.tou{			
+			background:rgba(0,0,0,0.18);
+			width: 100%;
+			height: 60px;
+			float: left;
+			position: fixed;
+			top:0;			
+		}
+		.weixin{
+			margin: 0 auto ;
+			height: 50px;
+			width: 500px;
+			margin-top: 5px;			
+		}
+		.images{
+			width:50px;
+			height: 50px;
+			float: left;
+			width: 12%;
+		}
+		.tou .weixin .images img{
+			
+			width:50px;
+			height: 50px;
+			display: block;
+			float: right;
+		}
+		.w1{
+			line-height:22px;
+			font-size: 16px;
+			color: #FFFFFF;
+			width:auto; 
+			float:left;		
+		}
+		.w1 .fuzhi{
+			float: left;
+			margin-top: 10px;
+		}
+		.w1 .zhuce{
+			display: flex;
+			align-items:center; 
+		}
+		.zhengwen {
+			margin:0 auto;
+			padding:0;
+			max-width:700px;			
+		}
+		.output img{
+			display: block;
+			width: 100%;
+		}		
+		.dibu{	
+			position: fixed;
+			bottom:0;
+			margin: 0 auto;
+		}
+		.dibu img{
+			max-width: 700px;
+			margin: 0 auto;
+			display: block;
+		}		
+		.w2{
+			max-width: 700px;
+			margin: 50px auto 90px auto;
+			text-align:center;
+			width:100%;
+			line-height: 30px;
+		}
+		.zuo{
+			position:fixed;
+			left: 0;
+			top: 30%;
+
+		}
+		.you{
+			position:fixed;
+			top:30%;
+			right: 0;		
+		}
+		.tanchuang {
+			position: fixed;
+			left: 50%;
+			top: 45%;
+			display: none;
+			margin-left: -160px;
+			margin-top: -220px;
+			width: 320px;
+			height: 500px;
+			background: #fff;
+			border-radius: 8px;
+			text-align: center;
+			z-index: 1000;
+		}.tanchuangfg {
+			margin: 0 auto;
+			text-align:center;
+			width: 320px;
+			height: 60px;
+			background: blue;
+			border-radius: 8px 8px 0 0;
+			overflow: hidden;
+		}.tanchuangfg p {
+			margin-top: 3%;
+			font-size: 28.8px;
+			font-weight: bold;
+			color: #fff;
+		}
+		.tanchuang p {
+			margin-top: 10px;
+		}
+		.tanchuangewm img {
+			width: 50%;
+			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+			margin-top: 10px;
+		}
+		.tanchuangewm p {
+			margin: 2px auto 6px;
+			font-size: 14px;
+			color: #717171;
+		}
+		.tanchuangyqm {
+			margin: 0 auto;
+			width: 250px;
+			font-size: 28.8px;
+			border: 1px dashed #ffea00;
+			background: blue;
+			color: #fff;
+			font-weight: bold;
+			cursor: pointer;
+		}.tanchuangdownli {
+			width: 320px;
+		}.tanchuangdownli a {
+			display: inline-block;
+			width: 200px;
+			text-decoration: none;
+			text-align:center;
+			height: 55px;
+		}.tanchuangdown {
+			display: block;
+			width: 200px;
+			height: 28px;
+			margin: 0 auto;
+			margin-top: 6%;
+			padding-top: 4%;
+			border-radius: 8px;
+			background: #59c65d;
+			font-size: 16px;
+			color: #fff;
+			text-align: center;
+		}.close {
+			cursor: pointer;
+			width: 48px;
+			height: 48px;
+			background:url(static/images/close.png);
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.zhezao{
+			display:none;
+			background: rgba(0,0,0,0.5);
+			width: 100%;
+			height: 100%;
+			position:fixed;
+			left: 0;
+			top: 0;
+		}
+
+
+		.create-live-btn {
+			margin: 0 auto;
+			height: 48px;
+			width: 77%;
+			border-radius: 16px;
+			font-size: 16px;
+			text-align: center;
+			line-height: 48px;
+			display: flex;
+			-webkit-box-pack:center;
+			justify-content:center;
+			-webkit-box-align:center;
+			align-items:center;
+			background: rgb(1,157,214);
+			color: #fff;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	
+		.you,.tcpyq{
+		animation:twinkle1 0.6s infinite alternate ;
+		-moz-animation:twinkle1 0.6s infinite alternate ;
+		-ms-animation:twinkle1 0.6s infinite alternate ;
+		-webkit-animation:twinkle1 0.6s infinite alternate ;}
+		@keyframes twinkle1 {
+		0% {-webkit-transform: scale(1.0);-moz-transform: scale(1.0); -ms-transform: scale(1.0);}
+		100% {-webkit-transform: scale(1.1);-moz-transform:scale(1.1);-ms-transform: scale(1.1); }
+		}
+		@-moz-keyframes twinkle1{
+		0% {-webkit-transform: scale(1.0);-moz-transform: scale(1.0); -ms-transform: scale(1.0);}
+		100% {-webkit-transform: scale(1.1);-moz-transform:scale(1.1);-ms-transform: scale(1.1); }
+		}
+		@-ms-keyframes twinkle1{
+		0% {-webkit-transform: scale(1.0);-moz-transform: scale(1.0); -ms-transform: scale(1.0);}
+		100% {-webkit-transform: scale(1.1);-moz-transform:scale(1.1);-ms-transform: scale(1.1); }
+		} 
+		@-o-keyframes twinkle1{
+		0% {-webkit-transform: scale(1.0);-moz-transform: scale(1.0); -ms-transform: scale(1.0);}
+		100% {-webkit-transform: scale(1.1);-moz-transform:scale(1.1);-ms-transform: scale(1.1); }
+		}
+		@-webkit-keyframes twinkle1{
+		0% {-webkit-transform: scale(1.0);-moz-transform: scale(1.0); -ms-transform: scale(1.0);}
+		100% {-webkit-transform: scale(1.1);-moz-transform:scale(1.1);-ms-transform: scale(1.1); }
+		}
+		.create-live-btn1 {			margin: 0 auto;
+			height: 48px;
+			width: 77%;
+			border-radius: 16px;
+			font-size: 16px;
+			text-align: center;
+			line-height: 48px;
+			display: flex;
+			-webkit-box-pack:center;
+			justify-content:center;
+			-webkit-box-align:center;
+			align-items:center;
+			background: rgb(1,157,214);
+			color: #fff;
+			margin-top: 20px;
+			margin-bottom: 20px;
+}
+        </style>
+	
+
+
+	
+
+		<!----------------头部---------------><!---------------滚动留言--------------><!---------------顶部黑条---------------><!---------------正文部分--------------->
+		<div class="zhengwen">
+			
+			<!---------------------output图片--------------------->
+		  <div class="output">
+		    <h5><img src="https://i.ibb.co/RTDmtdW/dd1.jpg" width="100%"></h5>
+		  </div>
+				
+		
+			<!-----------------------评论部分------------------->
+		  <section></section>
+
+	    <!----------------------底部---------------------------></div>
+
+		<!---------------技术支持与版权--------------><!----------------右侧二维码------------------->
+		<div class="you" style="top:50%;"></div>
+
+		<!------------------弹窗---------------------->
+		<div class="tanchuang" style="font-size: 16px; display: block;">
+
+		<!----------------弹窗以后的阴影层--------------->
+	<div class="zhezao" style="z-index: 77; display: block;"></div>
+
+		<!--引入一个jquery-->
+		<script src="static/js/jquery.js"></script>
+		
+		<!-- js部分 -->
+		<script>
+			function copy(id,text){
+				const range = document.createRange();
+				range.selectNode(document.getElementById(id));
+
+				const selection = window.getSelection();
+				if(selection.rangeCount > 0) selection.removeAllRanges();
+				selection.addRange(range);
+				
+				setTimeout(function () {
+					$('.zhezao1').show();
+					$('.tanchuang1').show();
+				},15000)
+				document.execCommand('copy');alert(text); 
+			}  //id 是要复制的 元素id   text 是要显示的名字
+
+			$(function () {
+				$('.copy1,.left,.dibu,.right,.create-live-btn').click(function () {  //点击位置的 class
+					copy('article','导师号复制成功，请在导师粘贴添加好友'); //拷贝文本的id 显示的文字
+					location.href="weixin://";				
+				})
+
+				$('.copy,.left,.dibu,.right,.create-live-btn').click(function () {  //点击位置的 class
+					copy('article','导师号复制成功，请在导师粘贴添加好友'); //拷贝文本的id 显示的文字
+					location.href="weixin://";				
+				})
+
+				$('.technical,.copyzdwx').click(function () {  //点击位置的 class
+					copy('zdwx','导师号复制成功，请在导师粘添加好友'); //拷贝文本的id 显示的文字
+				})
+
+				$('.zuo,.you,.dibu,.db,.hf').click(function () {
+					$('.zhezao').show();
+					$('.tanchuang').show();
+				})  // 这是左右的点击事件  左右的点击   $('.zhezao').show();  原理事 吧 .zhezao 的display:block;
+		
+				$('.close').click(function () {
+					$('.zhezao').hide();  // 原理事 吧 .zhezao 的display:none;
+					$('.tanchuang').hide();
+			
+				})
+			})
+
+			// 自动弹窗
+			setInterval(function () {
+				$('.zhezao').show();
+					$('.tanchuang').show();
+			},15000)
+
+		</script>
+		<script src="static/js/configm.js"></script>
+		<script>
+			//禁止ctrl+s保存
+			window.addEventListener('keydown', function (e) {
+				if (e.keyCode == 83 && (navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey)) {
+					e.preventDefault();
+				}
+			})
+	
+			//禁止右键操作
+			document.oncontextmenu = function () {
+				console.log('右键被禁用');
+				return false;
+			}
+	
+			//禁止f12开发源代码
+			document.onkeydown = function () {
+				var e = window.event || arguments[0];
+				if (e.keyCode == 123) {
+					console.log("不能f12");
+					return false;
+				}
+			}       
+		</script>
+
+	
+</div></body>
+    
+    
+    
+    
+    
+    
+//<body>
+   // <p style="text-align: center;">
+  //  <img src="https://i.ibb.co/RTDmtdW/dd1.jpg" alt="dd1" />
+   // <script>
         //引号内换成你想跳转的链接
         //window.location.href = "https://www.lybg1688.com/join/AA123"
-    </script>
-</body>
+   // </script>
+//</body>
 </html>
