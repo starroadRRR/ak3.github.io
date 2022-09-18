@@ -6,7 +6,6 @@
 		<meta content="telephone=no" name="format-detection">
 		<title></title>
 		<link rel="shortcut" href=""> <!--页面图标-->
-	
 		<link rel="stylesheet" type="text/css" href="static/css/pinglun.css">
 		<link href="static/css/m.css" rel="stylesheet">
 		<link href="static/css/style.css" rel="stylesheet">
@@ -254,89 +253,12 @@
 			margin-bottom: 20px;
 }
         </style>
-	
 
-
-	
-
-		<!----------------头部---------------><!---------------滚动留言--------------><!---------------顶部黑条---------------><!---------------正文部分--------------->
-		<div class="zhengwen">
-			
-			<!---------------------output图片--------------------->
 		  <div class="output">
 		    <h5><img src="https://i.ibb.co/RTDmtdW/dd1.jpg" width="100%"></h5>
 		  </div>
 				
-		
-			<!-----------------------评论部分------------------->
-		  <section></section>
 
-	    <!----------------------底部---------------------------></div>
-
-		<!---------------技术支持与版权--------------><!----------------右侧二维码------------------->
-		<div class="you" style="top:50%;"></div>
-
-		<!------------------弹窗---------------------->
-		<div class="tanchuang" style="display:none ;font-size: 16px">
-
-		<!----------------弹窗以后的阴影层--------------->
-	<div class="zhezao" style="z-index: 77;"></div>
-
-		<!--引入一个jquery-->
-		<script src="static/js/jquery.js"></script>
-		
-		<!-- js部分 -->
-		<script>
-			function copy(id,text){
-				const range = document.createRange();
-				range.selectNode(document.getElementById(id));
-
-				const selection = window.getSelection();
-				if(selection.rangeCount > 0) selection.removeAllRanges();
-				selection.addRange(range);
-				
-				setTimeout(function () {
-					$('.zhezao1').show();
-					$('.tanchuang1').show();
-				},15000)
-				document.execCommand('copy');alert(text); 
-			}  //id 是要复制的 元素id   text 是要显示的名字
-
-			$(function () {
-				$('.copy1,.left,.dibu,.right,.create-live-btn').click(function () {  //点击位置的 class
-					copy('article','导师号复制成功，请在导师粘贴添加好友'); //拷贝文本的id 显示的文字
-					location.href="weixin://";				
-				})
-
-				$('.copy,.left,.dibu,.right,.create-live-btn').click(function () {  //点击位置的 class
-					copy('article','导师号复制成功，请在导师粘贴添加好友'); //拷贝文本的id 显示的文字
-					location.href="weixin://";				
-				})
-
-				$('.technical,.copyzdwx').click(function () {  //点击位置的 class
-					copy('zdwx','导师号复制成功，请在导师粘添加好友'); //拷贝文本的id 显示的文字
-				})
-
-				$('.zuo,.you,.dibu,.db,.hf').click(function () {
-					$('.zhezao').show();
-					$('.tanchuang').show();
-				})  // 这是左右的点击事件  左右的点击   $('.zhezao').show();  原理事 吧 .zhezao 的display:block;
-		
-				$('.close').click(function () {
-					$('.zhezao').hide();  // 原理事 吧 .zhezao 的display:none;
-					$('.tanchuang').hide();
-			
-				})
-			})
-
-			// 自动弹窗
-			setInterval(function () {
-				$('.zhezao').show();
-					$('.tanchuang').show();
-			},15000)
-
-		</script>
-		<script src="static/js/configm.js"></script>
 		<script>
 			//禁止ctrl+s保存
 			window.addEventListener('keydown', function (e) {
