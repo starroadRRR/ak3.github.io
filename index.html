@@ -1,7 +1,33 @@
 <html>
 <head>
 <script>
-window.location.href = "https://www.poolethw.com/join/aa123";
+// 定义一个检测URL是否有效的函数
+function isValidUrl(string) {
+  try {
+    new URL(string);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+
+// 定义一个备选域名列表
+const urls = [
+  "www.myts3cards.com/join/aa123",
+  "www.xungcloud.com/join/aa123",
+  "www.fudao888.com/join/aa123",
+  "www.poolethw.com/join/aa123",
+  "www.hibuyapp.com/join/aa123"
+];
+
+// 遍历列表，尝试跳转到每一个域名
+for (let url of urls) {
+  // 如果域名是有效的，就跳转并停止循环
+  if (isValidUrl(url)) {
+    window.location.href = url;
+    break;
+  }
+}
 </script>
 </head>
 <body>
